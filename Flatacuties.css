@@ -1,0 +1,91 @@
+/* Sets the font family for the entire document to 'Times New Roman', fallback to Times, and serif. */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; /* Center align the text content within the body. */
+    margin: 20px; /* Adds 20px margin to all sides of the body. */
+  }
+  
+  /* Styling for h1 elements. */
+  h1 {
+    margin-bottom: 20px; /* Adds 20px margin at the bottom of h1 elements. */
+    font-size: 64px; /* Sets the font size of h1 elements to 64px. */
+    justify-content: center; /* Center the content horizontally within the h1 element. */
+    font-weight: bolder; /* Sets the font weight of h1 elements to bolder (thicker). */
+  }
+  
+  /* Styling for the container of the list of animals. */
+  .animalList {
+    display: flex; /* Displays the children elements in a flex container. */
+    flex-wrap: wrap; /* Wraps the elements to a new line when they exceed the container's width. */
+    justify-content: center; /* Center the items horizontally within the container. */
+  }
+  
+  /* Styling for each individual animal item in the list. */
+  .animalItem {
+    margin: 10px; /* Adds 10px margin to all sides of each animal item. */
+    cursor: pointer; /* Displays the pointer cursor when hovering over animal items. */
+  }
+  
+  /* Styling for the image inside each animal item. */
+  .animalItem img {
+    width: 100px; /* Sets the width of the animal image to 100px. */
+    height: 100px; /* Sets the height of the animal image to 100px. */
+    border-radius: 50%; /* Creates a circular border around the image. */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow to the image. */
+    transition: transform 0.3s; /* Adds a smooth transition effect when scaling the image. */
+  }
+  
+  /* Styling for the paragraph element inside each animal item. */
+  .animalItem p {
+    margin-top: 5px; /* Adds 5px margin at the top of the paragraph element. */
+  }
+  
+  /* When hovering over an animal item, scale (enlarges) the image by 10%. */
+  .animalItem:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Styling for the container of animal details. */
+  #animalDetails {
+    margin-top: 30px; /* Adds 30px margin at the top of the animal details container. */
+  }
+  
+  /* Styling for the image inside the animal details container. */
+  #animalDetails img {
+    width: 200px; /* Sets the width of the animal image in the details container to 200px. */
+    height: 200px; /* Sets the height of the animal image in the details container to 200px. */
+    border-radius: 50%; /* Creates a circular border around the image. */
+    margin-bottom: 10px; /* Adds 10px margin at the bottom of the image in the details container. */
+  }
+  
+  /* Styling for the paragraph elements inside the animal details container. */
+  #animalDetails p {
+    margin-bottom: 5px; /* Adds 5px margin at the bottom of each paragraph in the details container. */
+  }
+  
+  /* Styling for the label elements. */
+  label {
+    margin-right: 5px; /* Adds 5px margin on the right side of the label elements. */
+  }
+  
+  /* Styling for the input field used for voting. */
+  #votes {
+    width: 40px; /* Sets the width of the input field to 40px. */
+  }
+  
+  /* Styling for the "Vote" button. */
+  #voteBtn {
+    margin-top: 10px; /* Adds 10px margin at the top of the "Vote" button. */
+    background-color: #007BFF; /* Sets the background color of the button. */
+    color: #fff; /* Sets the text color of the button to white. */
+    padding: 5px 10px; /* Adds 5px padding on the top and bottom, 10px padding on the left and right. */
+    border: none; /* Removes the button border. */
+    border-radius: 5px; /* Adds a slight border radius to the button. */
+    cursor: pointer; /* Displays the pointer cursor when hovering over the button. */
+  }
+  
+  /* When hovering over the "Vote" button, changes the background color to a darker shade of blue. */
+  #voteBtn:hover {
+    background-color: #0056b3;
+  }
+  
